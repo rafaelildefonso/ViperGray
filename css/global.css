@@ -1,0 +1,128 @@
+/*reset css*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+/*--- FONTS ---*/
+
+@import url("https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+
+/* ------------------------ */
+
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+/*--- HEADER ---*/
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logoTitulo {
+  display: flex;
+  align-items: center;
+}
+
+header .titulo-pag {
+  font-family: "Miltonian Tattoo", sans-serif;
+  color: #53565b;
+  font-size: 30px;
+  line-height: normal;
+}
+
+header .vipergray-logo {
+  width: 65px;
+  height: 65px;
+  margin-left: 11px;
+  object-fit: cover;
+}
+
+header .interacoes {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+header .produtos {
+  font-family: "Noto Sans Hebrew", sans-serif;
+  color: #57585a;
+  font-size: 20px;
+  line-height: normal;
+}
+
+header .conheca {
+  font-family: "Noto Sans Hebrew", sans-serif;
+  color: #57585a;
+  font-size: 20px;
+  line-height: normal;
+}
+
+header .suporte {
+  font-family: "Noto Sans Hebrew", sans-serif;
+  color: #57585a;
+  font-size: 20px;
+  line-height: normal;
+}
+
+header .produtos:hover,header .conheca:hover, header .suporte:hover {
+    text-decoration: underline;
+}
+
+header .pesquisa {
+  display: flex;
+}
+
+header .pesquisar-container {
+  margin-top: 5px;
+  width: 125px;
+  height: 30px;
+  background-color: #eeeeee;
+  border-radius: 12px;
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+}
+
+header .pesquisar {
+  font-family: "Noto Sans Hebrew-Regular", sans-serif;
+  color: #57585a;
+  font-size: 14px;
+  line-height: normal;
+}
+
+header .pesquisar_icone {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  margin-left: 10px;
+  opacity: 60%;
+  margin-right: 10px;
+}
+
+/* ------------------------ */

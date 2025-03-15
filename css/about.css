@@ -1,0 +1,37 @@
+main {
+  text-align: center;
+}
+
+main .titulo {
+  margin-top: 100px;
+  font-family: "Candal", Helvetica;
+  color: black;
+  font-size: 80px;
+  line-height: normal;
+}
+
+main .historia {
+  margin-top: 80px;
+  padding: 0 150px;
+  font-family: "Noto Sans Hebrew", Helvetica;
+  color: #57585a;
+  font-size: 19px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+main .imagens {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+main .imagens img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 40px;
+}

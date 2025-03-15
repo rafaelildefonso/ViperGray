@@ -1,0 +1,115 @@
+body {
+  overflow: hidden;
+}
+
+main {
+  height: 90%;
+  text-align: center;
+}
+
+main .fundo {
+  width: 100%;
+  height: 110%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 0.5) 26.5%,
+    rgba(167, 218, 241, 0.5) 100%
+  );
+}
+
+main .formContainer {
+  width: 520px;
+  height: 600px;
+  background-color: #eeeeee;
+  border-radius: 20px;
+}
+
+main .titulo {
+  font-family: "Candal", Helvetica;
+  color: #000000;
+  font-size: 35px;
+  line-height: normal;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+main .formContainer input {
+  font-family: "Noto Sans Hebrew", Helvetica;
+  color: #57585a;
+  font-size: 22px;
+  line-height: normal;
+  width: 440px;
+  height: 55px;
+  border-radius: 12px;
+  border: 0;
+  padding-left: 15px;
+}
+
+main .formContainer input:focus {
+  outline: none;
+}
+
+main .nomeInput {
+  margin-bottom: 30px;
+}
+
+main .emailInput {
+  margin-bottom: 30px;
+}
+
+main .tipoAjuda {
+  font-family: "Noto Sans Hebrew", Helvetica;
+  font-weight: 400;
+  color: #57585a;
+  font-size: 22px;
+  line-height: normal;
+  width: 440px;
+  height: 55px;
+  border-radius: 12px;
+  border: 0;
+  margin-bottom: 30px;
+  padding-left: 15px;
+  appearance: none; /* Remove o estilo padrão */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('../images/seta_baixo.png'); /* Ícone personalizado */
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* Ajusta a posição */
+  background-size: 20px; /* Ajusta o tamanho da seta */
+}
+
+main .tipoAjuda:focus {
+    outline: none;
+  }
+
+main .descricaoInput {
+  font-family: "Noto Sans Hebrew", Helvetica;
+  font-weight: 400;
+  color: #57585a;
+  font-size: 22px;
+  line-height: normal;
+  width: 440px;
+  border-radius: 12px;
+  border: 0;
+  margin-bottom: 40px;
+  padding-left: 15px;
+}
+
+main .descricaoInput:focus {
+  outline: none;
+}
+
+main .enviar {
+  font-family: "Candal", Helvetica;
+  color: #eeeeee;
+  font-size: 40px;
+  line-height: normal;
+  width: 440px;
+  height: 75px;
+  border-radius: 12px;
+  background-color: #38c9ff;
+  border: 0;
+}

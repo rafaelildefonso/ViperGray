@@ -1,0 +1,84 @@
+.banner {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 50px;
+  background: linear-gradient(
+    180deg,
+    rgb(166.82, 217.68, 241.19) 12%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  padding-top: 90px;
+}
+
+.banner .mouse {
+  position: absolute;
+  width: 1050px;
+  height: 930px;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.banner .titulo-mouse {
+  font-family: "Bungee", sans-serif;
+  color: #464646;
+  font-size: 100px;
+  line-height: normal;
+}
+
+.banner .descricao {
+  font-family: "Bebas Neue", sans-serif;
+  color: #2cb5e7;
+  font-size: 40px;
+  line-height: normal;
+}
+
+.banner .botoes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 400px;
+}
+
+.banner .detalhes-container {
+  width: 212px;
+  height: 56px;
+  background-color: #38c9ff;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.banner .comprar-container {
+  width: 200px;
+  height: 56px;
+  border: 4px solid;
+  border-color: #38c9ff;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .ver-detalhes {
+  font-family: "Belanosima", sans-serif;
+  color: #ffffff;
+  font-size: 35px;
+  line-height: normal;
+}
+
+.banner .comprar {
+  font-family: "Belanosima", sans-serif;
+  color: #38c9ff;
+  font-size: 35px;
+  line-height: normal;
+  margin-right: 5px;
+}
+
+.banner .seta-azul {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  margin-top: 7px;
+}

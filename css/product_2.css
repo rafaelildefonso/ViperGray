@@ -1,0 +1,152 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90%;
+}
+
+.produto {
+  display: flex;
+}
+
+main .imagens-produto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+main .imagens-produto .imagem-container {
+  width: 110px;
+  height: 110px;
+  background-color: #efefef;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .mouse-frente-viper {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+main .mouse-cima-viper {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+}
+
+main .mouse-atras-viper {
+  width: 155px;
+  height: 116px;
+  object-fit: cover;
+}
+
+main .imagem-principal {
+  width: 425px;
+  height: 425px;
+  background-color: #efefef;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .mouse-viper {
+  width: 425px;
+  height: 425px;
+  object-fit: cover;
+  position: absolute;
+}
+
+main .seta {
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  transform: rotateZ(180deg);
+  z-index: 5;
+  cursor: pointer;
+}
+
+main .seta2 {
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  z-index: 5;
+  cursor: pointer;
+}
+
+main .titulo-produto {
+  width: 549px;
+  height: 130px;
+  margin-left: 30px;
+}
+
+main .nome-produto {
+  width: 440px;
+  font-family: "Bungee", Helvetica;
+  color: #000000;
+  font-size: 35px;
+  line-height: normal;
+}
+
+main .avaliacao {
+  display: flex;
+  align-items: center;
+  transform: translateX(-10px);
+}
+
+main .qntAvaliacoes {
+  font-family: "Noto Sans Hebrew", Helvetica;
+  color: #57585a;
+  font-size: 14px;
+  line-height: normal;
+  margin-bottom: 2px;
+}
+
+main .estrelas {
+  width: 140px;
+  height: 30px;
+}
+
+main .custo-produto {
+  width: 170px;
+  height: 85px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+main .preco-produto {
+  font-family: "Bayon", Helvetica;
+  color: #c35f5f;
+  font-size: 35px;
+  line-height: normal;
+}
+
+main .juros {
+  font-family: "Bree Serif", Helvetica;
+  color: #57585a;
+  font-size: 18px;
+  line-height: normal;
+  transform: translateY(-20px);
+}
+
+main .comprar {
+  margin-top: 40px;
+  width: 445px;
+  height: 75px;
+  border-radius: 12px;
+  background-color: #38c9ff;
+  border: 0;
+  font-family: "Candal", Helvetica;
+  color: #eeeded;
+  font-size: 30px;
+  line-height: normal;
+  transform: translateX(-10px);
+  cursor: pointer;
+}

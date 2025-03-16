@@ -8,10 +8,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Candal&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bayon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
 
 /* ------------------------ */
-
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -74,6 +75,7 @@ header .produtos {
   color: #57585a;
   font-size: 20px;
   line-height: normal;
+  z-index: 5;
 }
 
 header .conheca {
@@ -81,6 +83,7 @@ header .conheca {
   color: #57585a;
   font-size: 20px;
   line-height: normal;
+  z-index: 5;
 }
 
 header .suporte {
@@ -88,25 +91,13 @@ header .suporte {
   color: #57585a;
   font-size: 20px;
   line-height: normal;
+  z-index: 5;
 }
 
-header .produtos:hover,header .conheca:hover, header .suporte:hover {
-    text-decoration: underline;
-}
-
-header .pesquisa {
-  display: flex;
-}
-
-header .pesquisar-container {
-  margin-top: 5px;
-  width: 125px;
-  height: 30px;
-  background-color: #eeeeee;
-  border-radius: 12px;
-  display: flex;
-  padding-left: 10px;
-  align-items: center;
+header .conheca:hover,
+header .suporte:hover,
+header .produtos:hover {
+  text-decoration: underline;
 }
 
 header .pesquisar {
@@ -114,6 +105,17 @@ header .pesquisar {
   color: #57585a;
   font-size: 14px;
   line-height: normal;
+  width: 125px;
+  height: 30px;
+  border-radius: 12px;
+  background-color: #eeeeee;
+  padding-left: 10px;
+  margin-top: 5px;
+  border: 0;
+}
+
+header .pesquisa {
+  display: flex;
 }
 
 header .pesquisar_icone {

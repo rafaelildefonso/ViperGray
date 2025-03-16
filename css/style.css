@@ -1,40 +1,58 @@
-.banner {
+#banner {
   text-align: center;
   width: 100%;
+  height: 95dvh;
   padding-bottom: 50px;
-  background: linear-gradient(
-    180deg,
-    rgb(166.82, 217.68, 241.19) 12%,
-    rgba(255, 255, 255, 0.2) 100%
-  );
   padding-top: 90px;
 }
 
-.banner .mouse {
+.banner1 {
+  background: linear-gradient(
+    180deg,
+    rgb(232, 185, 241) 12%,
+    rgba(232, 185, 241, 0.1) 100%
+  );
+}
+
+.banner2 {
+  background: linear-gradient(
+    180deg,
+    rgb(166.82, 217.68, 241.19) 12%,
+    rgba(166, 217, 241, 0.1) 100%
+  );
+}
+
+.banner1 .mouse {
   position: absolute;
   z-index: 1;
   width: 1050px;
   height: 930px;
-  top: 5px;
+  top: 65px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.banner .titulo-mouse {
+#banner .titulo-mouse {
   font-family: "Bungee", sans-serif;
-  color: #464646;
+  color: #363636;
   font-size: 100px;
   line-height: normal;
 }
 
-.banner .descricao {
+.banner1 .descricao {
   font-family: "Bebas Neue", sans-serif;
-  color: #2cb5e7;
-  font-size: 40px;
+  color: #b473b9;
+  font-size: 45px;
   line-height: normal;
 }
 
-.banner .botoes {
+#banner .texto-rapido {
+  position: absolute;
+  width: 215px;
+  transform: translate(-25px,-70px);
+}
+
+#banner #botoes {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -42,7 +60,72 @@
   z-index: 10;
 }
 
-.banner .detalhes-container {
+.banner1 #detalhes-container {
+  width: 212px;
+  height: 56px;
+  background-color: #b473b9;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 11;
+}
+
+.banner1 #comprar-container {
+  width: 200px;
+  height: 56px;
+  border: 4px solid;
+  border-color: #b473b9;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+}
+
+#banner #ver-detalhes {
+  font-family: "Belanosima", sans-serif;
+  color: #ffffff;
+  font-size: 35px;
+  line-height: normal;
+}
+
+.banner1 #comprar {
+  font-family: "Belanosima", sans-serif;
+  color: #b473b9;
+  font-size: 35px;
+  line-height: normal;
+  margin-right: 5px;
+}
+
+#banner #seta-azul {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  margin-top: 7px;
+}
+
+.divisor {
+  width: 100%;
+  height: 20px;
+}
+
+.banner2 .descricao {
+  font-family: "Bebas Neue", sans-serif;
+  color: #38c9ff;
+  font-size: 45px;
+  line-height: normal;
+}
+
+.banner2 .mouse {
+  position: absolute;
+  z-index: 1;
+  height: 740px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.banner2 #detalhes-container {
   width: 212px;
   height: 56px;
   background-color: #38c9ff;
@@ -53,7 +136,7 @@
   z-index: 11;
 }
 
-.banner .comprar-container {
+.banner2 #comprar-container {
   width: 200px;
   height: 56px;
   border: 4px solid;
@@ -65,24 +148,10 @@
   z-index: 11;
 }
 
-.banner .ver-detalhes {
-  font-family: "Belanosima", sans-serif;
-  color: #ffffff;
-  font-size: 35px;
-  line-height: normal;
-}
-
-.banner .comprar {
+.banner2 #comprar {
   font-family: "Belanosima", sans-serif;
   color: #38c9ff;
   font-size: 35px;
   line-height: normal;
   margin-right: 5px;
-}
-
-.banner .seta-azul {
-  width: 20px;
-  height: 20px;
-  object-fit: cover;
-  margin-top: 7px;
 }

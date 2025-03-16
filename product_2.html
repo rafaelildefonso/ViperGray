@@ -30,6 +30,12 @@
         <div class="imagens-produto">
           <div class="imagem-container">
             <img
+              class="mouse-principal-viper"
+              src="images/mouse2_viper_sombra.png"
+            />
+          </div>
+          <div class="imagem-container">
+            <img
               class="mouse-frente-viper"
               src="images/mouse2_frente_viper.png"
             />
@@ -46,9 +52,19 @@
         </div>
 
         <div class="imagem-principal">
-          <img class="mouse-viper" src="images/mouse2_viper_sombra.png" />
+          <div id="model-3d"></div>
+
+          <div class="imagem">
+            <img class="mouse-viper" src="images/mouse2_viper_sombra.png" />
           <img class="seta" src="images/seta.png" />
           <img class="seta2" src="images/seta.png" />
+          </div>
+
+          <div id="show-3d">
+            <img src="images/icone_fechar.png" class="botao-fechar">
+            <img src="images/3d-viewer-icon.png" class="viewer-icon">
+            <p>3D</p>
+          </div>
         </div>
 
         <div class="descricao-produto">
@@ -68,5 +84,7 @@
         </div>
       </div>
     </main>
+    <script src="./js/product_2.js"></script>
+    <script type="module" src="./js/main_product2.js"></script>
   </body>
 </html>

@@ -112,4 +112,5 @@ main .enviar {
   border-radius: 12px;
   background-color: #38c9ff;
   border: 0;
+  cursor: pointer;
 }

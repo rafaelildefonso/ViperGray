@@ -121,10 +121,15 @@ function animate() {
   const center = box.getCenter(new THREE.Vector3());
   object.position.sub(center); // Move o modelo para o centro (0,0,0)
 
+  controls.minDistance = 0.6;
+  controls.maxDistance = 3;
+
   // Atualiza os controles (para movimentar a câmera)
   controls.update();
 
   renderer.render(scene, camera);
+
+  document.querySelector(".carregando").style.visibility = "hidden";
 }
 
 //Add a listener to the window, so we can resize the window and the camera

@@ -71,31 +71,31 @@ scene.add(mesh);
 //Add lights to the scene, so we can actually see the 3D model
 const dirLight1 = new THREE.DirectionalLight(0x8a8a8a, 4);
 dirLight1.position.set(-1.5, 0, 0);
-dirLight1.target.position.set(0,0,0);
+dirLight1.target.position.set(0, 0, 0);
 scene.add(dirLight1);
 scene.add(dirLight1.target);
 
 const dirLight2 = new THREE.DirectionalLight(0x8a8a8a, 4);
 dirLight2.position.set(1, 0, -1.5);
-dirLight2.target.position.set(0,0,0);
+dirLight2.target.position.set(0, 0, 0);
 scene.add(dirLight2);
 scene.add(dirLight2.target);
 
 const dirLight3 = new THREE.DirectionalLight(0x8a8a8a, 4);
 dirLight3.position.set(1, 0, 1.5);
-dirLight3.target.position.set(0,0,0);
+dirLight3.target.position.set(0, 0, 0);
 scene.add(dirLight3);
 scene.add(dirLight3.target);
 
 const dirLight4 = new THREE.DirectionalLight(0x8a8a8a, 4);
 dirLight4.position.set(0, 2, 0);
-dirLight4.target.position.set(0,0,0);
+dirLight4.target.position.set(0, 0, 0);
 scene.add(dirLight4);
 scene.add(dirLight4.target);
 
 const dirLight5 = new THREE.DirectionalLight(0x8a8a8a, 4);
 dirLight5.position.set(0, -2, 0);
-dirLight5.target.position.set(0,0,0);
+dirLight5.target.position.set(0, 0, 0);
 scene.add(dirLight5);
 scene.add(dirLight5.target);
 
@@ -121,10 +121,14 @@ function animate() {
   const center = box.getCenter(new THREE.Vector3());
   object.position.sub(center); // Move o modelo para o centro (0,0,0)
 
+  controls.minDistance = 0.4;
+  controls.maxDistance = 3;
   // Atualiza os controles (para movimentar a câmera)
   controls.update();
 
   renderer.render(scene, camera);
+
+  document.querySelector(".carregando").style.visibility = "hidden";
 }
 
 //Add a listener to the window, so we can resize the window and the camera

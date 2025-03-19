@@ -78,8 +78,8 @@ main #show-3d {
   background-color: rgba(218, 218, 218, 0.699);
   text-align: center;
   font-family: "Bayon", Helvetica;
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   align-self: self-end;
   margin-bottom: 10px;
@@ -88,23 +88,25 @@ main #show-3d {
 }
 
 main #show-3d .viewer-icon {
-  width: 40px;
-  height: 40px;
+  margin-top: 3px;
+  width: 30px;
+  height: 30px;
   opacity: 60%;
 }
 
 main #show-3d p{
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   opacity: 60%;
+  font-size: 14px;
 }
 
 main .botao-fechar {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   opacity: 60%;
   visibility: hidden;
   position: absolute;
-  transform: translate(1px,7px);
+  transform: translate(1px,10px);
 }
 
 main .mouse-viper {
@@ -122,6 +124,7 @@ main .seta {
   transform: rotateZ(180deg);
   z-index: 5;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 main .seta2 {
@@ -131,6 +134,11 @@ main .seta2 {
   object-fit: cover;
   z-index: 5;
   cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+main .seta:active ,main .seta2:active {
+  opacity: 30%;
 }
 
 main .titulo-produto {
@@ -201,4 +209,22 @@ main .comprar {
   line-height: normal;
   transform: translateX(-10px);
   cursor: pointer;
+}
+
+.carregando {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #3498db;
+  animation: pulseAnim 1.5s infinite;
+  position: absolute;
+  align-self: center;
+  margin-right: 192.5px;
+  visibility: hidden;
+}
+
+@keyframes pulseAnim {
+  0% { transform: scale(0.8); opacity: 0.6; }
+  50% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(0.8); opacity: 0.6; }
 }

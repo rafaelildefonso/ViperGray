@@ -8,6 +8,7 @@ document.getElementById("show-3d").addEventListener("click", ()=> {
     if(model3d.style.visibility == "visible"){
         // modelo escondido
         model3d.style.visibility = "hidden"
+        document.querySelector(".carregando").style.visibility = "hidden"
         imagemMouse.style.visibility = "visible"
         botaoFechar.style.visibility = "hidden"
         viewerIcon.style.visibility = "visible"
@@ -16,6 +17,7 @@ document.getElementById("show-3d").addEventListener("click", ()=> {
     else {
         // modelo visivel
         model3d.style.visibility = "visible"
+        document.querySelector(".carregando").style.visibility = "visible"
         imagemMouse.style.visibility = "hidden"
         botaoFechar.style.visibility = "visible"
         viewerIcon.style.visibility = "hidden"

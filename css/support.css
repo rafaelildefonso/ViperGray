@@ -16,7 +16,7 @@ main .fundo {
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgba(255, 255, 255, 0.5) 26.5%,
-    rgba(167, 218, 241, 0.5) 100%
+    rgba(184, 207, 218, 0.5) 100%
   );
 }
 

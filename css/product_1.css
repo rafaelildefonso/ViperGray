@@ -124,6 +124,7 @@ main .seta {
   transform: rotateZ(180deg);
   z-index: 5;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 main .seta2 {
@@ -133,6 +134,11 @@ main .seta2 {
   object-fit: cover;
   z-index: 5;
   cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+main .seta:active ,main .seta2:active {
+  opacity: 30%;
 }
 
 main .titulo-produto {
@@ -198,11 +204,17 @@ main .comprar {
   background-color: #38c9ff;
   border: 0;
   font-family: "Candal", Helvetica;
-  color: #eeeded;
+  color: #ffffff;
   font-size: 30px;
   line-height: normal;
   transform: translateX(-10px);
   cursor: pointer;
+}
+
+main .comprar:hover {
+  background-color: #ffffff;
+  border: 3px #38c9ff solid;
+  color: #38c9ff;
 }
 
 .carregando {

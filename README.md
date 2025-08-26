@@ -12,6 +12,7 @@ O site foi feito utilizando **HTML, CSS e JavaScript**, com foco em design simpl
 - Página de sobre nós
 - Página de contato
 
+---
 
 ### 🌍 Acesse online
 O site está disponível em: [ViperGray no GitHub Pages](https://rafaelildefonso.github.io/ViperGray/index.html)
